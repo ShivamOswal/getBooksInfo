@@ -1,0 +1,98 @@
+---
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.2"
+servers:
+- url: http://127.0.0.1:8000
+paths:
+  /books:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+      - name: languages
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: hi
+      - name: mime_type
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: text%2Fhtml
+      - name: authorName
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: Bernard
+      - name: topic
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: Plays
+      - name: page
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: "1"
+      - name: id
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: "3825"
+      - name: title
+        in: query
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: string
+        example: Pygmalion
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+              examples:
+                "0":
+                  value: '{"count":1,"next":null,"previous":null,"results":[{"id":3825,"title":"Pygmalion","authors":[{"name":"Shaw, Bernard"}],"translators":[],"subjects":["Comedies","Flower vending -- Drama","Linguistics teachers -- Drama","London (England) -- Drama","Social classes -- Drama","Speech and social status -- Drama"],"bookshelves":["Plays"],"languages":["en"],"copyright":false,"media_type":"Text","formats":{"text/html":"https://www.gutenberg.org/ebooks/3825.html.images","text/html; charset=iso-8859-1":"https://www.gutenberg.org/files/3825/3825-h/3825-h.htm","application/epub+zip":"https://www.gutenberg.org/ebooks/3825.epub3.images","application/x-mobipocket-ebook":"https://www.gutenberg.org/ebooks/3825.kf8.images","text/plain; charset=utf-8":"https://www.gutenberg.org/files/3825/3825-0.txt","application/rdf+xml":"https://www.gutenberg.org/ebooks/3825.rdf","image/jpeg":"https://www.gutenberg.org/cache/epub/3825/pg3825.cover.medium.jpg"},"download_count":7015}]}'
+                "1":
+                  value: '{"count":0,"next":null,"previous":null,"results":[]}'
+      servers:
+      - url: http://127.0.0.1:8000
+    servers:
+    - url: http://127.0.0.1:8000
+components:
+  schemas:
+    inline_response_200:
+      type: object
+      properties:
+        next: {}
+        previous: {}
+        count:
+          type: integer
+        results:
+          type: array
+          items:
+            type: string
