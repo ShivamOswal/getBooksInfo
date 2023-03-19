@@ -1,31 +1,14 @@
 Gutendex
 ========
 
-Gutendex is a simple, self-hosted [web API](https://en.wikipedia.org/wiki/Web_API) for serving book
-catalog information from [Project Gutenberg](https://www.gutenberg.org/wiki/Main_Page), an online
-library of free ebooks.
-
-Try it at [`gutendex.com`](http://gutendex.com).
+This is a simple REST API to read books info from Gutendex dump
 
 
-Why?
-----
 
-Project Gutenberg can be a useful source of literature, but its large size makes it difficult to
-access and analyse it on a large scale. Thus, an API of its catalog information is useful for
-automating these tasks.
 
 
 How does it work?
 -----------------
-
-Gutendex uses [Django](https://www.djangoproject.com) to download catalog data and serve it in a
-simple [JSON](http://json.org) [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
-API.
-
-Project Gutenberg has no such public API of its own, but it publishes nightly archives of
-complicated XML files. Gutendex downloads these files, stores their data in a database, and
-publishes the data in a simpler format.
 
 
 Installation
