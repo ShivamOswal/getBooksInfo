@@ -1,7 +1,7 @@
 Gutendex
 ========
 
-This is a simple REST API to read books info from Gutendex dump.
+This is a simple REST API to read books info from Gutendex dump
 
 
 
